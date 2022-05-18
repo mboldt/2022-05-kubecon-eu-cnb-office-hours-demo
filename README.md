@@ -35,6 +35,7 @@ grype -q sbom:sbom/launch/paketo-buildpacks_bundle-install/launch-gems/sbom.syft
 
 We see that there is a known vulnerability (these are the same underlying issue, just from two different sources).
 I didn't have a chance to try to exploit it for the demo, but [CVE-2020-8184 is a secure cookie vulnerability](https://nvd.nist.gov/vuln/detail/CVE-2020-8184).
+It allows for forgery of secure or host-only cookies if the name is URL encoded.
 We see that it is fixed in the latest version of Rack, version 2.2.3.
 So, we upgrade that dependency and rebuild.
 
