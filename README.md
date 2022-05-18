@@ -26,8 +26,8 @@ tree sbom
 ```
 
 We see SBOM for files in the cache and in the image that gets launched.
-These buildpacks write the SBOM in several formats.
-We scan the Syft SBOM from the gmes we use with the Grype tool:
+These buildpacks write the SBOM in several formats (CycloneDX, SPDX, and Syft).
+We scan the Syft SBOM from the gems we use with the Grype tool:
 
 ```
 grype -q sbom:sbom/launch/paketo-buildpacks_bundle-install/launch-gems/sbom.syft.json
