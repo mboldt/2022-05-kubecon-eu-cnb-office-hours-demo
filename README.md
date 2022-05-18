@@ -1,7 +1,7 @@
 # Cloud Native Buildpacks Office Hours Demo - Kubecon EU 2022
 
 Here we build a simple Ruby app using [Paketo Buildpacks](https://paketo.io/).
-We store the buildpack-generated SBOM files when we build.
+We store the buildpack-generated Software Bill of Materials (SBOM) files when we build.
 We scan the SBOM files using [Grype](https://github.com/anchore/grype) and see that one of our dependencies has a CVE.
 We then update the dependency and rescan the new SBOM to see that we have no known vulnerabilities.
 
