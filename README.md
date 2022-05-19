@@ -6,6 +6,11 @@ We scan the SBOM files using [Grype](https://github.com/anchore/grype) and see t
 We then update the dependency, rebuild, and scan the new SBOM to see that it has no known vulnerabilities.
 
 The app is a very simple Ruby/Rack web app.
+
+```
+less app.rb config.ru Gemfile
+```
+
 To build the container image, while exposing the SBOM, we run the command:
 
 ```
