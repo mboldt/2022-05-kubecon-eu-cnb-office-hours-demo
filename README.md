@@ -20,7 +20,7 @@ pack build sample-ruby-app --builder paketobuildpacks/builder:base --sbom-output
 Let's see the app up and running:
 
 ```
-docker run --name sample-ruby-app --detach --env PORT=8080 --rm --publish 8080:8080 sample-ruby-app
+docker run --rm --name sample-ruby-app --detach --env PORT=8080 --publish 8080:8080 sample-ruby-app
 open http://localhost:8080
 ```
 
