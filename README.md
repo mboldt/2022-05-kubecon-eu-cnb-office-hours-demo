@@ -48,6 +48,7 @@ So, we upgrade that dependency and rebuild.
 ```
 sed -i '' 's/2\.2\.2/2.2.3/' Gemfile
 bundle lock --update
+git diff
 pack build sample-ruby-app --builder paketobuildpacks/builder:base --sbom-output-dir new-sbom
 ```
 
