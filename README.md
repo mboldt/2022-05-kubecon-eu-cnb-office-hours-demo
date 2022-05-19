@@ -26,6 +26,7 @@ tree sbom
 ```
 
 We see SBOM for files in the cache and in the image that gets launched.
+These SBOM files also exist in the image itself.
 These buildpacks write the SBOM in several formats (CycloneDX, SPDX, and Syft).
 We scan the Syft SBOM from the gems we use with the Grype tool:
 
